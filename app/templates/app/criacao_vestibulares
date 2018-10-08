@@ -1,0 +1,17 @@
+{% extends "app/layout.html" %}
+
+{% block content %}
+
+<div class="jumbotron">
+    <h1>Cadastro de cursos</h1>
+</div>
+
+<table class="table">
+    <tr><th>Analise e Desenvolvimento de Sistemas</th></tr>
+    <tr><th>Sistema de informação</th></tr>
+    <tr><th>Administração</th></tr>
+        {% for curso in cursos %}
+        {% endfor %}
+</table>
+
+{% endblock %}
